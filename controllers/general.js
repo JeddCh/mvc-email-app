@@ -25,7 +25,7 @@ router.post("/contact-us",(req,res)=>{
 
     
     const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey(process.env.SEND_GRID_API_KEY);
+    sgMail.setApiKey(SEND_GRID_API_KEY);
     const msg = {
     to: `kadeembestteaches@gmail.com`,
     from: `${email}`,
